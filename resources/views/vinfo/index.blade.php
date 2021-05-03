@@ -1,7 +1,7 @@
 @extends('adminlte::page')
 @section('title','VInfo')
 @section('content_header')
-    <h1>Bienvenido a la vista VInfo</h1>
+    <h1>Bienvenido a la vista VInfo - Jose Gonzales</h1>
 @stop
 
 @section('content')
