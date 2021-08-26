@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Vinfo;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class VinfoController extends Controller
 {
 
@@ -15,7 +15,8 @@ class VinfoController extends Controller
      */
     public function index()
     {
-        $vinfos = Vinfo::all();
+        //$vinfos = Vinfo::all();
+        $vinfos=DB::table('INV_WINDOWS')->get();
         return  view('vinfo.index')->with('vinfos',$vinfos);
     }
 

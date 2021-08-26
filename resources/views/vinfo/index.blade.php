@@ -13,40 +13,30 @@
         <table id="vinfo" class="table table-dark table-hover mt-4 text-center">
             <thead class="table-primary">
                 <tr>
-                    <th scope="col">VMName</th>
-                    <th scope="col">Powerstate</th>
-                    <th scope="col">Template</th>
-                    <th scope="col">CPUs</th>
-                    <th scope="col">MemoryGB</th>
-                    <th scope="col">VirtualDisks</th>
-                    <th scope="col">Funcion</th>
-                    <th scope="col">Rol</th>
+
+                    <th scope="col">Server_Name</th>
+                    <th scope="col">IP_Primaria</th>
+                    <th scope="col">Ambiente</th>
+                    <th scope="col">Sistema_Operativo</th>
+
                 </tr>
             </thead>
             <tbody>
                 @foreach($vinfos as $vinfo)
                 <tr>
-                    <td>{{$vinfo->vInfoVMName}}</td>
-                    <td>{{$vinfo->vInfoPowerstate}}</td>
-                    <td>{{$vinfo->vInfoTemplate}}</td>
-                    <td>{{$vinfo->vInfoCPUs}}</td>
-                    <td>{{$vinfo->vInfoMemory/1024}}</td>
-                    <td>{{$vinfo->vInfoNumVirtualDisks}}</td>
-                    <td>{{$vinfo->CustomField106}}</td>
-                    <td>{{$vinfo->CustomField107}}</td>
+                    <td>{{$vinfo->Server_Name}}</td>
+                    <td>{{$vinfo->IP_Primaria}}</td>
+                    <td>{{$vinfo->Ambiente}}</td>
+                    <td>{{$vinfo->Sistema_Operativo}}</td>
                 </tr>
                 @endforeach
             </tbody>
             <tfoot>
                 <tr>
-                    <th>VMName</th>
-                    <th>Powerstate</th>
-                    <th>Template</th>
-                    <th>CPUs</th>
-                    <th>MemoryGB</th>
-                    <th>VirtualDisks</th>
-                    <th>Funcion</th>
-                    <th>Rol</th>
+                    <th>Server Name</th>
+                    <th>IP Primaria</th>
+                    <th>Ambiente</th>
+                    <th>Sistema Operativo</th>
                 </tr>
             </tfoot>
             </table>
